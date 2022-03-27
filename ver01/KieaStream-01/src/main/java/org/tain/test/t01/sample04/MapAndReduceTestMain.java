@@ -15,7 +15,7 @@ public class MapAndReduceTestMain {
 		);
 		
 		double avg = list.stream()
-			.mapToInt(Student :: getScore)
+			.mapToInt(Student::getScore)
 			.average()
 			.getAsDouble();
 		

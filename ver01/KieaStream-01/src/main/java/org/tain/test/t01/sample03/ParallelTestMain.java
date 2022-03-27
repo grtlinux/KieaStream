@@ -12,12 +12,12 @@ public class ParallelTestMain {
 		);
 		
 		Stream<String> stream = list.stream();
-		stream.forEach(ParallelTestMain :: print);
+		stream.forEach(ParallelTestMain::print);
 		
 		System.out.println();
 		
 		Stream<String> parallelStream = list.parallelStream();
-		parallelStream.forEach(ParallelTestMain :: print);
+		parallelStream.forEach(ParallelTestMain::print);
 	}
 	
 	private static void print(String str) {
