@@ -1,4 +1,4 @@
-package org.tain.test.t02.test02;
+package org.tain.test.t02.common;
 
 public class Student {
 

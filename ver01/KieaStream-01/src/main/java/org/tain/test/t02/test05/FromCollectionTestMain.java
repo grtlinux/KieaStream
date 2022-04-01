@@ -1,4 +1,4 @@
-package org.tain.test.t02.test02;
+package org.tain.test.t02.test05;
 
 import java.util.Arrays;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 import org.tain.test.t02.common.Student;
 
-public class LambdaExpressionsTestMain {
+public class FromCollectionTestMain {
 
 	public static void main(String[] args) {
 		List<Student> list = Arrays.asList(
@@ -16,10 +16,6 @@ public class LambdaExpressionsTestMain {
 		);
 		
 		Stream<Student> stream = list.stream();
-		stream.forEach(s -> {
-			String name = s.getName();
-			int score = s.getScore();
-			System.out.println(">>> " + name + ", " + score);
-		});
+		stream.forEach(s -> System.out.println(s.getName()));
 	}
 }
